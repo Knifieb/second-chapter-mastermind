@@ -567,6 +567,17 @@
   /* countdown */
   .countdown{
     margin-top:50px;
+  }
+  .countdown-label{
+    text-align:center;
+    font-size:11px;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    font-weight:600;
+    color:var(--gold);
+    margin-bottom:18px;
+  }
+  .countdown-units{
     display:flex;
     justify-content:center;
     gap:14px;
@@ -1005,15 +1016,18 @@
     <div class="pricing-head reveal">
       <div class="eyebrow-label" style="justify-content:center;">Founding Member Pricing</div>
       <h2 class="section-head" style="margin:0 auto;text-align:center;">Become a founding member before the door closes.</h2>
-      <p>Thirty seats. Eight weeks. One decision that funds the next chapter. Early bird pricing closes <strong>July 28th at midnight</strong>, and it's the only round that includes a private strategy session with me.</p>
+      <p>Thirty seats. Eight weeks. One decision that funds the next chapter. Early bird pricing closes <strong>June 28th at midnight</strong>, and it's the only round that includes a private strategy session with me.</p>
       <p class="pay-options">Pay in full, or split it with Afterpay or Klarna at checkout.</p>
     </div>
 
     <div class="countdown reveal" id="countdown">
-      <div class="unit"><div class="n" id="cd-days">--</div><div class="l">Days</div></div>
-      <div class="unit"><div class="n" id="cd-hours">--</div><div class="l">Hours</div></div>
-      <div class="unit"><div class="n" id="cd-mins">--</div><div class="l">Minutes</div></div>
-      <div class="unit"><div class="n" id="cd-secs">--</div><div class="l">Seconds</div></div>
+      <div class="countdown-label">Early Bird Pricing Closes In</div>
+      <div class="countdown-units">
+        <div class="unit"><div class="n" id="cd-days">--</div><div class="l">Days</div></div>
+        <div class="unit"><div class="n" id="cd-hours">--</div><div class="l">Hours</div></div>
+        <div class="unit"><div class="n" id="cd-mins">--</div><div class="l">Minutes</div></div>
+        <div class="unit"><div class="n" id="cd-secs">--</div><div class="l">Seconds</div></div>
+      </div>
     </div>
 
     <div class="price-grid reveal">
@@ -1022,7 +1036,7 @@
         <div class="tag">Early Bird</div>
         <h3>Founding Member</h3>
         <div class="price-amount">$397 <span>one time</span></div>
-        <div class="price-deadline">Enroll by July 28th at midnight</div>
+        <div class="price-deadline">Enroll by June 28th at midnight</div>
         <ul class="price-list">
           <li><span class="check">&#10003;</span><span>8 live mastermind calls. <strong>Strategy, hot seat, and action plans</strong>, every Thursday night</span></li>
           <li><span class="check">&#10003;</span><span><strong>1-hour private Strategy Session</strong> with Knifie, usable within 3 months of the program ending</span></li>
@@ -1037,7 +1051,7 @@
         <div class="tag">Full Price</div>
         <h3>Founding Member</h3>
         <div class="price-amount">$497 <span>one time</span></div>
-        <div class="price-deadline">After July 28th, through start of program</div>
+        <div class="price-deadline">After June 28th, through start of program</div>
         <ul class="price-list">
           <li><span class="check">&#10003;</span><span>8 live mastermind calls. <strong>Strategy, hot seat, and action plans</strong>, every Thursday night</span></li>
           <li><span class="check">&#10003;</span><span>Founding Alumni badge on completion</span></li>
@@ -1092,8 +1106,8 @@
   },{threshold:0.12});
   document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 
-  // countdown to July 28 midnight
-  const deadline = new Date('2026-07-29T00:00:00');
+  // countdown to June 28 midnight
+  const deadline = new Date('2026-06-29T00:00:00');
   function updateCountdown(){
     const now = new Date();
     let diff = deadline - now;
