@@ -1,172 +1,250 @@
+
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>The Shop Creator Growth Lab | Knifie Burks</title>
-  <meta name="description" content="A 90-day holiday TikTok Shop coaching experience for women 40+. Get seen, get selling and get strategic.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23171310'/%3E%3Cpath d='M18 17h28v7H26v7h17v7H26v9h20v7H18z' fill='%23c3a15f'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Intentional Excellence Black Friday Prep Edition. One custom ebook to sell, 16 social posts with graphics and captions, scheduling and a personal Branding Session. $197, only five spots.">
+<title>Intentional Excellence | Black Friday Prep Edition | The Burks Collective</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--black:#17120f;--gold:#d6a85e;--gold-light:#eac487;--cream:#faf7f1;--text:#28211c}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#f5f0e8;color:var(--text);font-family:'DM Sans',Arial,sans-serif;font-size:16px;line-height:1.6}
+h1,h2,h3,p{margin-top:0}
+h1,h2,h3{line-height:1.13}
+h1,h2,.serif{font-family:'Playfair Display',Georgia,serif;font-weight:400}
+a{color:inherit}
+.wrap{max-width:1200px;margin:auto}
+.hero{background:var(--black);display:grid;grid-template-columns:1fr 1fr;color:white;min-height:550px}
+.hero-image{background:url('assets/hero-office.jpg') center center/cover no-repeat;min-height:450px}
+.hero-copy{padding:52px clamp(24px,5vw,76px);display:flex;flex-direction:column;justify-content:center}
+.brand{font-size:13px;letter-spacing:.24em;text-align:center}
+.tagline{font-size:10px;color:var(--gold-light);letter-spacing:.22em;text-align:center}
+.rule{height:1px;background:var(--gold);width:44px;margin:20px auto 26px}
+.hero h1{font-size:clamp(40px,5.1vw,73px);margin-bottom:8px}
+.eyebrow{letter-spacing:.23em;font-size:13px}
+.hero .eyebrow{color:#e7d7c0;margin-bottom:22px}
+.hero .promise{font-size:19px;font-weight:700;line-height:1.45;margin-bottom:15px}
+.hero .intro{font-size:15px;color:#f0e8dc;max-width:410px}
+.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;text-align:center;min-height:52px;padding:13px 22px;background:var(--gold-light);color:#19130e;font-size:12px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;transition:background .2s,transform .2s;max-width:max-content}
+.btn:hover{background:#f6d6a2;transform:translateY(-1px)}
+.btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.overview{display:grid;grid-template-columns:1.1fr 1fr;background:var(--cream)}
+.overview-copy{padding:65px clamp(28px,6vw,85px)}
+.overview h2{font-size:clamp(40px,4.5vw,65px);margin:8px 0 25px}
+.overview p{max-width:520px}
+.small-rule{height:2px;width:55px;background:var(--gold);margin:0 0 27px}
+.office{background:url('assets/office-interior.jpg') center/cover no-repeat;min-height:430px}
+.features{display:grid;grid-template-columns:repeat(4,1fr);background:var(--black);color:#fff;padding:30px max(24px,calc((100vw - 1200px)/2));border-top:2px solid var(--gold);border-bottom:2px solid var(--gold)}
+.feature{text-align:center;padding:0 14px;border-right:1px solid #795e3d}
+.feature:last-child{border:0}
+.feature svg{width:36px;height:36px;fill:none;stroke:var(--gold);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.feature strong{display:block;font-size:12px;line-height:1.4;letter-spacing:.06em;margin:8px 0 3px}
+.feature span{display:block;font-size:12px;color:var(--gold-light)}
+.details{background:#faf7f1;padding:66px clamp(22px,5vw,64px)}
+.details-inner{max-width:1100px;margin:auto;display:grid;grid-template-columns:1fr 1.4fr;gap:70px;align-items:start}
+.details .eyebrow{margin-bottom:18px}
+.details h2{font-size:clamp(38px,4vw,57px)}
+.deliverable{display:flex;gap:18px;margin:0 0 25px}
+.num{flex:0 0 40px;height:40px;border-radius:50%;background:var(--gold);color:#fff;display:grid;place-items:center;font-weight:700}
+.deliverable h3{font-family:'DM Sans',sans-serif;font-size:16px;font-weight:700;margin:0 0 4px}
+.deliverable p{font-size:14px;margin:0}
+.investment{display:grid;grid-template-columns:1.05fr 1.1fr .82fr;max-width:1200px;margin:auto;background:var(--black);color:#fff}
+.portrait{background:url('assets/original-portrait.jpg') center top/cover no-repeat;min-height:575px}
+.price{padding:48px clamp(22px,3vw,42px)}
+.price h2{font-size:70px;margin:10px 0 18px}
+.price ul{list-style:none;margin:0 0 25px;padding:0}
+.price li{display:flex;gap:12px;font-size:14px;margin-bottom:10px;line-height:1.4}
+.tick{flex:0 0 20px;width:20px;height:20px;background:var(--gold);border-radius:50%;color:#18110b;display:grid;place-items:center;font-weight:bold;font-size:12px}
+.price .btn{width:100%;max-width:none}
+.price .sub{font-size:12px;text-align:center;margin-top:12px}
+.spots{background:#f1e7d9;color:#1e1711;padding:48px 25px;text-align:center;display:flex;flex-direction:column;justify-content:center}
+.spots svg{stroke:var(--gold);fill:none;width:65px;height:65px;margin:0 auto 20px}
+.spots h2{font-size:38px}
+.spots p{font-size:14px}
+.steps{padding:70px 25px;background:#fffaf4}
+.steps h2,.faq h2{text-align:center;font-size:clamp(38px,4vw,56px)}
+.steps-grid{max-width:1100px;margin:40px auto 0;display:grid;grid-template-columns:repeat(4,1fr);gap:25px}
+.step{border-top:2px solid var(--gold);padding-top:20px}
+.step b{color:#9b703b;font-size:14px}
+.step h3{font-size:19px;font-family:'DM Sans',sans-serif;font-weight:700;margin:8px 0}
+.step p{font-size:14px}
+.faq{padding:60px 25px;background:var(--cream)}
+.faq-inner{max-width:850px;margin:auto}
+.faq details{border-bottom:1px solid #d9c9b7;padding:18px 0}
+.faq summary{font-weight:700;cursor:pointer}
+.faq details p{margin:12px 0 0}
+.final{background:var(--black);color:white;text-align:center;padding:75px 24px}
+.final h2{font-size:clamp(40px,5vw,60px);max-width:780px;margin:0 auto 15px}
+.final p{max-width:700px;margin:0 auto 25px}
+.final .btn{max-width:100%}
+footer{background:#0c0907;color:#d6c9b8;text-align:center;padding:24px;font-size:12px}
+.note{font-size:12px;color:#7b6d5e}
+.final .note{color:#d6c9b8}
+@media(max-width:850px){
+.hero{grid-template-columns:1fr}
+.hero-image{min-height:400px;background-position:center 24%}
+.hero-copy{padding:40px 28px 55px}
+.hero h1{font-size:50px}
+.overview{grid-template-columns:1fr}
+.overview-copy{padding:55px 28px}
+.office{min-height:300px}
+.details-inner{grid-template-columns:1fr;gap:25px}
+.investment{grid-template-columns:1fr 1fr}
+.portrait{grid-column:1/-1;min-height:500px;background-size:contain;background-color:#17120f}
+.spots{padding:30px 20px}
+.steps-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:560px){
+.hero-image{min-height:335px}
+.features{grid-template-columns:repeat(2,1fr);gap:25px 0;padding:28px 12px}
+.feature:nth-child(2){border-right:0}
+.feature{padding:0 8px}
+.investment{grid-template-columns:1fr}
+.portrait{min-height:530px;background-size:cover}
+.price{padding:42px 26px}
+.spots{padding:40px 30px}
+.steps-grid{grid-template-columns:1fr}
+.btn{width:100%;max-width:100%}
+}
+</style>
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="The Shop Creator Growth Lab home">
-      <span>The Burks Collective</span>
-      <strong>Legacy Isn’t Later™</strong>
-    </a>
-    <a class="button button-small purchase-link" href="https://buy.stripe.com/eVq5kDcZs6LO2GjbNObZe0N" target="_blank" rel="noopener noreferrer">Join the Lab</a>
-  </header>
+<main>
+<section class="hero">
+<div class="hero-image" role="img" aria-label="The Burks Collective founder seated in an elegant office"></div>
+<div class="hero-copy">
+<div class="brand">THE BURKS COLLECTIVE</div>
+<div class="tagline">LEGACY ISN'T LATER.</div>
+<div class="rule"></div>
+<h1>INTENTIONAL<br>EXCELLENCE</h1>
+<div class="eyebrow">BLACK FRIDAY PREP EDITION</div>
+<p class="promise">Your Digital Product. Your Content.<br>Your Black Friday Marketing, Handled.</p>
+<p class="intro">Get your ebook created and four weeks of social media content ready to go so you can focus on what matters most: showing up for your audience and growing your business.</p>
+<a class="btn" href="https://buy.stripe.com/4gM7sLgbE2vy5Sv4lmbZe0V" target="_blank" rel="noopener noreferrer">Yes! I'm Ready to Get Prepared ↗</a>
+</div>
+</section>
 
-  <main id="top">
-    <section class="hero">
-      <div class="hero-copy reveal">
-        <p class="eyebrow">A 90-Day Holiday TikTok Shop Coaching Experience for Women 40+</p>
-        <h1>The Shop Creator <em>Growth Lab</em></h1>
-        <p class="hero-line">Get seen. Get selling. Get strategic.</p>
-        <p class="hero-text">Whether you are working toward your first 1,000 followers, trying to turn samples into sales or ready to scale what is already working, there is a place for you inside the Lab.</p>
-        <div class="hero-details">
-          <span>Begins October 1, 2026</span>
-          <span>90 days of coaching and support</span>
-        </div>
-        <a class="button purchase-link" href="https://buy.stripe.com/eVq5kDcZs6LO2GjbNObZe0N" target="_blank" rel="noopener noreferrer"><span class="cta-label">Join the Growth Lab</span></a>
-        <p class="microcopy">Klarna and Afterpay are available at checkout.</p>
-      </div>
-      <div class="hero-image-wrap reveal">
-        <div class="gold-frame"></div>
-        <img src="images/knifie-black-ivory.png" alt="Knifie Burks in a black and ivory outfit in a luxury home interior">
-        <div class="hero-seal"><span>90</span> DAYS</div>
-      </div>
-    </section>
+<section class="overview">
+<div class="overview-copy">
+<div class="eyebrow">BLACK FRIDAY IS COMING.</div>
+<h2>Will Your Business<br>Be Ready?</h2>
+<div class="small-rule"></div>
+<p>You have ideas. You have goals. You know what you want to offer your audience. But between running your business, creating content, and managing everything else, finding time to bring those ideas to life can feel like another full-time job.</p>
+<p>Before you know it, another holiday sales season is here.</p>
+<p><strong>Intentional Excellence</strong> helps you get a digital product created and a full month of marketing content prepared without the stress, the guesswork, or the last-minute scramble.</p>
+</div>
+<div class="office" role="img" aria-label="Upscale modern home office with cream chair and gold accents"></div>
+</section>
 
-    <section class="intro section-narrow reveal">
-      <p class="eyebrow">Your next chapter can create income</p>
-      <h2>You don’t need three different programs. You need support that meets you where you are.</h2>
-      <p>Maybe you are not in TikTok Shop yet. Maybe you have access, but samples, sellers and requirements have you wondering what you signed up for. Or maybe you are already making sales and know you could be more strategic. We will start with where you are and help you move forward from there.</p>
-    </section>
+<section class="features" aria-label="Package highlights">
+<div class="feature">
+<svg viewBox="0 0 32 32"><path d="M16 8C11 4 6 5 2 6v20c6-2 10-1 14 2 4-3 8-4 14-2V6c-4-1-9-2-14 2v20"/></svg>
+<strong>ONE<br>DIGITAL PRODUCT</strong><span>Up to 40 pages</span>
+</div>
+<div class="feature">
+<svg viewBox="0 0 32 32"><rect x="3" y="4" width="26" height="24" rx="1"/><circle cx="10" cy="11" r="2"/><path d="m4 25 9-9 5 5 4-4 6 8"/></svg>
+<strong>FOUR WEEKS<br>OF CONTENT</strong><span>4 posts per week (16 total)</span>
+</div>
+<div class="feature">
+<svg viewBox="0 0 32 32"><rect x="3" y="6" width="26" height="23" rx="1"/><path d="M3 13h26M10 3v6M22 3v6M9 19h3M16 19h3M23 19h2M9 24h3M16 24h3"/></svg>
+<strong>SCHEDULED<br>FOR YOU</strong><span>Through Metricool</span>
+</div>
+<div class="feature">
+<svg viewBox="0 0 32 32"><rect x="3" y="8" width="18" height="16" rx="1"/><path d="m21 13 8-5v16l-8-5"/></svg>
+<strong>PERSONAL<br>BRANDING SESSION</strong><span>30–45 minutes via Zoom</span>
+</div>
+</section>
 
-    <section class="starting-points">
-      <div class="portrait-panel reveal">
-        <img src="images/knifie-leopard.png" alt="Knifie Burks wearing a leopard print dress">
-        <div class="portrait-caption">Choose your starting point.<br><strong>Then let’s get to work.</strong></div>
-      </div>
-      <div class="points-content reveal">
-        <p class="eyebrow">Choose your starting point</p>
-        <article class="point-card">
-          <span class="point-number">01</span>
-          <div><h3>I’m Building My Way In</h3><p>Strengthen your positioning, create content people have a reason to follow, work toward your first 1,000 followers and prepare your account for TikTok Shop.</p></div>
-        </article>
-        <article class="point-card">
-          <span class="point-number">02</span>
-          <div><h3>I’m Ready to Work My Shop</h3><p>Find better products, evaluate sellers, request samples strategically, manage your obligations and create shoppable content that still sounds like you.</p></div>
-        </article>
-        <article class="point-card">
-          <span class="point-number">03</span>
-          <div><h3>I’m Ready to Scale What Sells</h3><p>Find the proof, repeat the winners and grow with some sense through analytics, stronger systems, campaigns, bonuses and holiday opportunities.</p></div>
-        </article>
-      </div>
-    </section>
+<section class="details">
+<div class="details-inner">
+<div>
+<div class="eyebrow">WHAT YOU'RE GETTING</div>
+<h2>One Package.<br>More Time to Focus.</h2>
+<div class="small-rule"></div>
+<p>Bring your vision. I'll help bring it to life with a digital product you can sell and four weeks of branded marketing content.</p>
+</div>
+<div>
+<div class="deliverable"><span class="num">1</span><div>
+<h3>Your Own Digital Product</h3>
+<p>One professionally designed ebook, up to 40 pages, created around your topic and direction for you to sell.</p>
+</div></div>
+<div class="deliverable"><span class="num">2</span><div>
+<h3>Four Weeks of Social Media Content</h3>
+<p><strong>4 posts per week for 4 weeks.</strong> That's 16 custom captions and 16 matching graphics created for your business.</p>
+</div></div>
+<div class="deliverable"><span class="num">3</span><div>
+<h3>Your Content Scheduled for You</h3>
+<p>All 16 posts scheduled through Metricool after approval and account connection.</p>
+</div></div>
+<div class="deliverable"><span class="num">4</span><div>
+<h3>Your Personal Branding Session</h3>
+<p>A 30–45 minute Zoom session after purchase to discuss your ebook topic, brand, audience, and content direction.</p>
+</div></div>
+</div>
+</div>
+</section>
 
-    <section class="months section-wide">
-      <div class="section-heading reveal">
-        <p class="eyebrow">October through December</p>
-        <h2>Your 90-day roadmap</h2>
-        <p>Each month has a clear focus, so you are not trying to fix everything at once.</p>
-      </div>
-      <div class="month-grid">
-        <article class="month-card reveal"><p class="month">October</p><h3>Get Positioned</h3><ul><li>Choose your starting point</li><li>Build toward 1,000 or 5,000 followers</li><li>Navigate the Creator Pilot Program</li><li>Choose products with a sales plan</li><li>Build your holiday product strategy</li></ul></article>
-        <article class="month-card featured reveal"><p class="month">November</p><h3>Get Selling</h3><ul><li>Prepare for Black Friday in week one</li><li>Create gift guides and product roundups</li><li>Turn one product into multiple videos</li><li>Create urgency without sounding frantic</li><li>Study clicks, orders and commissions</li></ul></article>
-        <article class="month-card reveal"><p class="month">December</p><h3>Get Strategic</h3><ul><li>Finish holiday sales strong</li><li>Use last-minute and self-care angles</li><li>Explore campaigns and seller bonuses</li><li>Identify evergreen products</li><li>Build your next 90-day plan</li></ul></article>
-      </div>
-    </section>
+<section class="investment" id="investment">
+<div class="portrait" role="img" aria-label="Original photograph of the founder wearing a blue top and brown pants"></div>
+<div class="price">
+<div class="eyebrow">THE INVESTMENT</div>
+<h2>$197</h2>
+<ul>
+<li><span class="tick">✓</span>One custom ebook, up to 40 pages</li>
+<li><span class="tick">✓</span>4 posts per week for 4 weeks (16 total)</li>
+<li><span class="tick">✓</span>16 custom captions</li>
+<li><span class="tick">✓</span>16 matching graphics</li>
+<li><span class="tick">✓</span>Scheduling through Metricool</li>
+<li><span class="tick">✓</span>30–45 minute Branding Session</li>
+<li><span class="tick">✓</span>14-business-day turnaround after the Branding Session and receipt of required materials</li>
+</ul>
+<a class="btn" href="https://buy.stripe.com/4gM7sLgbE2vy5Sv4lmbZe0V" target="_blank" rel="noopener noreferrer">Secure My Spot Now ↗</a>
+<p class="sub">Klarna and Afterpay available to eligible buyers at checkout.</p>
+</div>
+<aside class="spots">
+<svg viewBox="0 0 70 70"><circle cx="35" cy="15" r="8"/><circle cx="16" cy="21" r="7"/><circle cx="54" cy="21" r="7"/><path d="M22 55V42c0-18 26-18 26 0v13ZM4 55V43c0-13 14-17 20-9M66 55V43c0-13-14-17-20-9"/></svg>
+<h2>ONLY<br>5 SPOTS<br>AVAILABLE</h2>
+<div class="small-rule" style="margin:10px auto 26px"></div>
+<p>This is a limited-edition offer so I can give each project the attention it deserves and keep the production schedule manageable.</p>
+</aside>
+</section>
 
-    <section class="how-it-works">
-      <div class="laptop-image reveal"><img src="images/knifie-laptop.png" alt="Knifie Burks working on a laptop"></div>
-      <div class="how-copy reveal">
-        <p class="eyebrow">Teaching plus real support</p>
-        <h2>Learn it. Apply it. Bring your questions.</h2>
-        <div class="feature-row"><span>Weekly</span><div><h3>Focused Lab Lessons</h3><p>A practical video drops at the beginning of every week with guidance and action steps for each starting point.</p></div></div>
-        <div class="feature-row"><span>2× Monthly</span><div><h3>Monday Coaching Calls</h3><p>Meet with Knifie at 6:00 p.m. ET to plan your week, ask questions, review content and work through what is keeping you stuck.</p></div></div>
-        <div class="feature-row"><span>90 Days</span><div><h3>Private Facebook Community</h3><p>Get accountability, timely updates, feedback and support between calls without trying to figure everything out alone.</p></div></div>
-      </div>
-    </section>
+<section class="steps">
+<h2>Here's How It Works</h2>
+<div class="steps-grid">
+<div class="step"><b>STEP 01</b><h3>Reserve Your Spot</h3><p>Purchase the $197 package to secure one of the five available openings.</p></div>
+<div class="step"><b>STEP 02</b><h3>Your Branding Session</h3><p>Book a 30–45 minute Zoom session to share your ebook topic, business goals, and content direction.</p></div>
+<div class="step"><b>STEP 03</b><h3>Creation &amp; Design</h3><p>Your 14-business-day turnaround begins after your Branding Session and receipt of all required materials.</p></div>
+<div class="step"><b>STEP 04</b><h3>Review &amp; Schedule</h3><p>Review and approve your materials, then have your 16 posts scheduled through Metricool after your accounts are connected.</p></div>
+</div>
+</section>
 
-    <section class="schedule section-wide reveal">
-      <p class="eyebrow">Save the dates</p>
-      <h2>Monday coaching and support calls</h2>
-      <p>All calls begin at 6:00 p.m. ET. Replays will be available.</p>
-      <div class="dates"><span>Oct 5</span><span>Oct 19</span><span>Nov 2</span><span>Nov 16</span><span>Dec 7</span><span>Dec 21</span></div>
-    </section>
+<section class="faq">
+<div class="faq-inner">
+<h2>Frequently Asked Questions</h2>
+<details><summary>Do I need an ebook topic already?</summary><p>Yes. Bring your topic and general direction. We'll discuss the details during your Branding Session.</p></details>
+<details><summary>Can I sell the ebook?</summary><p>Yes. The ebook is created as a digital product you can offer for sale under your own brand.</p></details>
+<details><summary>How many posts will I receive?</summary><p>Four posts per week for four weeks, for a total of 16 captions and 16 matching graphics.</p></details>
+<details><summary>Will you schedule the content?</summary><p>Yes. Metricool scheduling is included once your content is approved and your social accounts are properly connected.</p></details>
+<details><summary>When does the 14-business-day turnaround begin?</summary><p>After your Branding Session is complete and all required information and materials have been received. Business days exclude weekends and holidays. Schedule your session promptly if you need materials before Black Friday.</p></details>
+<details><summary>Can I pay with Klarna or Afterpay?</summary><p>They are available for eligible customers when offered at checkout.</p></details>
+<details><summary>Are sales guaranteed?</summary><p>No. The package provides the described creative and scheduling deliverables, not a guarantee of sales or income.</p></details>
+</div>
+</section>
 
-    <section class="included section-wide">
-      <div class="section-heading reveal"><p class="eyebrow">Everything included</p><h2>The strategy, tools and support to move forward</h2></div>
-      <div class="included-grid reveal">
-        <div>Complete TikTok Shop Samples to Sales course</div><div>12 weekly Lab Lessons</div><div>Six live coaching and support calls</div><div>Call replay library</div><div>Private 90-day Facebook community</div><div>1K-to-5K TikTok Shop Action Guide</div><div>Four Ways to Earn Action Guide</div><div>Holiday planning resources</div><div>Weekly accountability and feedback</div>
-      </div>
-      <div class="center"><a class="button purchase-link" href="https://buy.stripe.com/eVq5kDcZs6LO2GjbNObZe0N" target="_blank" rel="noopener noreferrer"><span class="cta-label">Join the Growth Lab</span></a></div>
-    </section>
-
-    <section class="mission">
-      <div class="mission-copy reveal">
-        <p class="eyebrow">This is bigger than free samples</p>
-        <h2>Your experience and your voice have value.</h2>
-        <p>One helpful video can introduce a product, solve a problem and continue creating sales long after you post it. That is why this work connects to my larger mission: helping women over 40 turn their lived experience into retirement income through digital assets.</p>
-        <blockquote>Free samples are cute. Sales are better.</blockquote>
-      </div>
-      <div class="mission-accent reveal"><p>The course teaches you the process.</p><strong>The Growth Lab helps you apply it to your account, products, content and goals.</strong></div>
-    </section>
-
-    <section class="pricing" id="enroll">
-      <div class="pricing-card reveal">
-        <p class="eyebrow">Founding cohort enrollment</p>
-        <h2>The Shop Creator Growth Lab</h2>
-        <p class="price"><span>$</span><strong id="price-number">397</strong></p>
-        <p id="price-note">Enrollment is now open for the October 1st cohort.</p>
-        <ul><li>90 days of training, coaching and community support</li><li>Samples to Sales course and both action guides</li><li>Six Monday support calls and all replays</li><li>Holiday sales strategy from October through December</li></ul>
-        <a class="button purchase-link" href="https://buy.stripe.com/eVq5kDcZs6LO2GjbNObZe0N" target="_blank" rel="noopener noreferrer"><span class="cta-label">Yes, I’m ready to join the Growth Lab</span></a>
-        <p class="microcopy">Klarna and Afterpay are available at checkout. </p>
-      </div>
-    </section>
-
-    <section class="faq section-narrow">
-      <p class="eyebrow reveal">Questions before you join?</p><h2 class="reveal">Frequently asked questions</h2>
-      <details><summary>What if I’m not in TikTok Shop yet?</summary><p>You can still join. The Building My Way In starting point will help you work toward your first 1,000 followers, prepare your page and understand what comes next.</p></details>
-      <details><summary>What if I’m already making sales?</summary><p>You belong in Scaling What Sells. We’ll focus on analytics, winning products, repeatable content, campaigns, seller bonuses and holiday growth opportunities.</p></details>
-      <details><summary>What if I’m inside the Creator Pilot Program?</summary><p>We’ll help you understand the program, protect your account, work within the current limitations and build toward the requirements shown inside your account.</p></details>
-      <details><summary>Do I have to attend every call live?</summary><p>No. Calls will be recorded and placed in the community, although attending live gives you the opportunity to ask questions and receive coaching in real time.</p></details>
-      <details><summary>Does the program guarantee followers, samples or income?</summary><p>No. TikTok controls platform access, eligibility and distribution, and individual results vary. You’ll receive strategy, education, feedback and support, but you are responsible for completing the work and following current platform policies.</p></details>
-    </section>
-
-    <section class="final-cta">
-      <div class="final-image"><img src="images/knifie-cup-clean.png" alt="Knifie Burks seated with a cup in a warm luxury living room"></div>
-      <div class="final-copy">
-        <p class="eyebrow">You don’t have to know everything before you start</p>
-        <h2>Know where you are. Decide where you’re going. Then do the work.</h2>
-        <p>Wherever you are starting, we will spend the next 90 days helping you get seen, get selling and get strategic.</p>
-        <a class="button purchase-link" href="https://buy.stripe.com/eVq5kDcZs6LO2GjbNObZe0N" target="_blank" rel="noopener noreferrer"><span class="cta-label">Join the Growth Lab</span></a>
-      </div>
-    </section>
-  </main>
-
-  <footer><strong>The Burks Collective</strong><span>Legacy Isn’t Later™</span><span>Created by Knifie Burks</span></footer>
-  <script>
-    const earlyDeadline = new Date('2026-09-19T04:00:00Z');
-    const earlyLink = 'https://buy.stripe.com/eVq5kDcZs6LO2GjbNObZe0N';
-    const standardLink = 'https://buy.stripe.com/00w28rbVoc680yb19abZe0O';
-    if (Date.now() >= earlyDeadline.getTime()) {
-      document.querySelectorAll('.purchase-link').forEach(link => link.href = standardLink);
-      document.querySelectorAll('.cta-label').forEach(label => label.textContent = 'Join The Shop Creator Growth Lab');
-      document.getElementById('price-number').textContent = '397';
-      document.getElementById('price-note').textContent = 'Enrollment is now available at the standard program investment.';
-    } else {
-      document.querySelectorAll('.purchase-link').forEach(link => link.href = earlyLink);
-    }
-    const observer = new IntersectionObserver(entries => entries.forEach(entry => {
-      if (entry.isIntersecting) entry.target.classList.add('visible');
-    }), {threshold: .12});
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-  </script>
+<section class="final">
+<h2>Black Friday Doesn't Have to Catch You Unprepared.</h2>
+<p>Get your digital product created and your content prepared so you can focus on showing up for your audience and running your business.</p>
+<p><strong>Intentional Excellence: Black Friday Prep Edition</strong><br>$197 | Only 5 Spots Available</p>
+<a class="btn" href="https://buy.stripe.com/4gM7sLgbE2vy5Sv4lmbZe0V" target="_blank" rel="noopener noreferrer">Yes! I'm Ready to Get Prepared ↗</a>
+<p class="note" style="margin-top:22px">Purchase reserves your spot. Turnaround begins after your completed Branding Session and receipt of required materials. Results are not guaranteed.</p>
+</section>
+</main>
+<footer>THE BURKS COLLECTIVE · LEGACY ISN'T LATER.</footer>
 </body>
 </html>
